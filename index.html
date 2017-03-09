@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet"><!--bootstrap用-->
+<script src="jquery-2.1.4.min.js"></script>
+<script src="bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+
+<script src="jquery.video.min.js"></script>
+
+<link href="index.css" rel="stylesheet">
+<script src="index.js"></script>
+
+<title>SYSTEM MEDIA</title>
+</head>
+
+<body>
+<div class="container">
+
+<!--スマホ用メニュー表示エリア-->
+		<div class="mini_menu_area visible-sm visible-xs">
+			<nav class="visible-sm visible-xs clearfix">
+				<!--スマホ用メニューボタン-->
+				<div class="mini_menu_wrap"> 
+					<a href="#" class="modal-close btn" role="button" data-toggle="modal" data-target="#modal-example">
+						<i></i>
+					</a> 
+				</div>
+				
+				<!--隠れているメニュー--><!--open_menuボタンを押すと、hide_menuが開く-->
+				<div class="mini_menu_info">
+				
+					<!--仕事と技術-->
+					<hr class="mini_menu_info_margin-top">
+					<div>
+						<div class="open_menu">
+							<p class="mini_menu_index">仕事と技術</p>
+							<hr>
+						</div>
+						<!--仕事と技術の中の詳しいメニュー-->
+						<div class="hide_menu">
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+						</div>
+					</div><!--/仕事と技術-->
+					
+					<!--実績紹介-->
+					<div>
+						<div class="open_menu">
+							<p class="mini_menu_index">実績紹介</p>
+							<hr>
+						</div>
+						<!--実績紹介の詳しいメニュー-->
+						<div class="hide_menu">
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+						</div>
+					</div><!--/実績紹介-->
+					
+					<!--事業内容-->
+					<div>
+						<div class="open_menu">
+							<p class="mini_menu_index">事業内容</p>
+							<hr>
+						</div>
+						<!--事業内容の詳しいメニュー-->
+						<div class="hide_menu">
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+						</div>
+					</div><!--/事業内容-->
+					
+					<!--お問い合わせ-->
+					<div>
+						<div class="open_menu">
+							<p class="mini_menu_index">お問い合わせ</p>
+							<hr>
+						</div>
+						<!--お問い合わせの詳しいメニュー-->
+						<div class="hide_menu">
+							<p>サンプル</p>
+							<hr>
+							<p>サンプル</p>
+							<hr>
+						</div>
+					</div><!--/お問い合わせ-->
+					
+				</div><!--/mini_menu_info 隠れているメニュー-->
+			</nav>
+		</div>
+		<!--/スマホ用メニュー表示エリア-->
+		
+		
+	<header class="movie_head">
+	
+		<!--背景の動画部分-->
+		<div id="back_movie"></div>
+		
+		<!--PCなどの大画面用メニュー-->
+		<nav class="visible-lg visible-md clearfix">
+			<div class="menu_wrap">
+				
+				<img src="image/menu.png" class="menu_logo">
+				
+				<ul class="menu_nav">
+					<li> <!--仕事と技術-->
+						<a href="#"> 
+							<span class="nav_block"></span>
+							<span class="nav_text">
+								<p>仕事と技術</p>
+								<p class="ruby">OUR CONCEPT</p>
+							</span> 
+						</a>
+						<!--隠れているナビ-->
+						<div class="in_nav"> 
+							<a href="#"><p>サンプル</p></a> 							
+							<a href="#"><p>サンプル</p></a> 	
+							<a href="#"><p>サンプル</p></a>	
+						</div>
+						<div class="over_in_nav"><!--マウス判定処理用の空要素--></div>
+					</li><!--/仕事と技術-->
+					
+					<li> <!--実績紹介-->
+						<a href="#"> 
+							<span class="nav_block"></span>
+							<span class="nav_text">
+								<p>実績紹介</p>
+								<p class="ruby">ACHIEVEMENTS</p>
+							</span> 
+						</a>
+						<!--隠れているナビ-->
+						<div class="in_nav"> 
+							<a href="#"><p>サンプル</p>	</a> 
+							<a href="#"><p>サンプル</p></a> 
+							<a href="#"><p>サンプル</p></a> 
+							<a href="#"><p>サンプル</p></a> 
+							<a href="#"><p>サンプル</p></a> 
+						</div>
+						<div class="over_in_nav over_in_nav_height_change"><!--マウス判定処理用の空要素--></div>
+					</li><!--/実績紹介-->
+					
+					<li> <!--事業内容-->
+						<a href="#"> 
+							<span class="nav_block"></span>
+							<span class="nav_text">
+								<p>事業内容</p>
+								<p class="ruby">ABOUT US</p>
+							</span> 
+						</a>
+						<!--隠れているナビ-->
+						<div class="in_nav"> 
+							<a href="#">
+								<p>サンプル</p>
+							</a> 
+							<a href="#">
+								<p>サンプル</p>
+							</a> 
+							<a href="#">
+								<p>サンプル</p>
+							</a> 
+							<a href="#">
+								<p>サンプル</p>
+							</a> 
+						</div>
+						<div class="over_in_nav"><!--マウス判定処理用の空要素--></div>
+					</li><!--/事業内容-->
+					
+					<li> <!--お問い合わせ-->
+						<a href="#"> 
+							<span class="nav_block"></span>
+							<span class="nav_text">
+								<p>お問い合わせ</p>
+								<p class="ruby">CONTACT</p>
+							</span> 
+						</a>
+						<!--隠れているナビ-->
+						<div class="in_nav"> 
+							<a href="#">
+								<p>サンプル</p>
+							</a> 
+							<a href="#">
+								<p>サンプル</p>
+							</a> 
+						</div>
+						<div class="over_in_nav"><!--マウス判定処理用の空要素--></div>
+					</li><!--/お問い合わせ-->
+				</ul>
+				
+			</div><!--/class="menu_wrap-->
+		</nav>
+		
+		<!--------------------------元々ここにスマホ用navがあった------------------------->
+
+		<!--PC用ロゴマーク-->
+		<div class="rogo_wrap visible-lg visible-md visible-sm"> <img src="image/logo.png" class="rogo"> </div>
+		<!--スマホ用ロゴマーク-->
+		<div class="mini_rogo_wrap visible-xs"> <img src="image/logo.png" class="rogo"> </div>
+		<!--PRESS RELEASE-->
+		<div class="press_release"> <img src="image/PRESS RELEASE.png">
+			<p>｜<span class="back_black">求人情報を公開いたしました(2015.05.10)</span></p>
+			<p>｜<span class="back_black">亀山高等学校 プロモーションムービーを公開いたしました(2015.05.09)</span></p>
+		</div>
+	</header>
+	
+	
+	<article>
+		<!--OUR CONCEPT-->
+		<section class="concept">
+			<!--PC用コンセプト-->
+			<div class="visible-lg visible-md visible-sm">
+				<img src="image/CONCEPT.png" class="img_concept">
+			</div>
+			<div class="visible-lg visible-md visible-sm">
+				<img src="image/concept_info.png" class="img_concept_info">
+			</div>
+			<!--スマホ用コンセプト-->
+			<div class="visible-xs">
+				<img src="image/CONCEPT.png" class="mini_img_concept">
+			</div>
+			<div class="visible-xs">
+				<img src="image/concept_info.png" class="mini_img_concept_info">
+			</div>
+			<!--詳しく知るボタン-->
+			<div class="concept_button visible-lg visible-md visible-sm"><a href="#">詳しく知る</a></div>
+			<div class="mini_concept_button visible-xs"><a href="#">詳しく知る</a></div>
+		</section>
+		
+		<!--こんなご要望にお応えします-->
+		<section>
+			<div class="respond_request visible-lg visible-md visible-sm">
+				<img src="image/こんなご要望に.png" class="respond_request_img">
+			</div>
+			<div class="respond_request visible-xs">
+				<img src="image/こんなご要望に.png" class="mini_respond_request_img">
+			</div>
+			
+			<!--地域の方々に利用していただきやすい施設にしたい-->
+			<div class="respond_request_info on_request_1"> 
+				<img src="image/comment1.png" class="respond_request_info_img visible-lg visible-md visible-sm">
+				<div class="mini_respond_request_info_img visible-xs">地域の方々に利用していただきやすい施設にしたい</div>
+			</div>
+			<div class="request_movie request_movie_1"></div>
+			
+			<!--保護者や中学生に、生徒のリアルな笑顔を伝えたい-->
+			<div class="respond_request_info color_gray on_request_2"> 
+				<img src="image/comment2.png" class="respond_request_info_img visible-lg visible-md visible-sm">
+				<div class="mini_respond_request_info_img visible-xs">保護者や中学生に、生徒のリアルな笑顔を伝えたい</div>
+			</div>
+			<div class="request_movie request_movie_2"></div>
+			
+			<!--商談で離れた農場の様子をお見せしたい-->
+			<div class="respond_request_info on_request_3"> 
+				<img src="image/comment3.png" class="respond_request_info_img visible-lg visible-md visible-sm">
+				<div class="mini_respond_request_info_img visible-xs">商談で離れた農場の様子をお見せしたい</div>
+			</div>
+			<div class="request_movie request_movie_3"></div>
+			
+			<!--お客様に安心をお伝えしたい-->
+			<div class="respond_request_info on_request_4"> 
+				<img src="image/comment4.png" class="respond_request_info_img visible-lg visible-md visible-sm">
+				<div class="mini_respond_request_info_img visible-xs">お客様に安心をお伝えしたい</div>
+			</div>
+			<div class="request_movie request_movie_4"></div>
+		</section>
+		
+		<!--更に事例を見る-->
+		<section>
+			<div class="more_example"> <img src="image/さらに事例を見る.png" class="more_example_img">
+				<div class="white_concept_button"><a href="#">詳しく知る</a></div>
+			</div>
+		</section>
+		
+		<!--INTRODUCTION-->
+		<section> 
+			<img src="image/Introduction.png" class="introduction_img"> <img src="image/事業概要.png" class="introduction_overview">
+			
+			<!--PC用事業概要-->
+			<div class="overview_wrap clearfix visible-lg">
+				<!--デザイン広告制作-->
+				<div class="overview_contents">
+					<p class="overviw_contents_margin">デザイン</p>
+					<p>広告制作</p>
+				</div>
+				<!--映像/音楽制作-->
+				<div class="overview_contents">
+					<p class="overviw_contents_margin">映像/音楽制作</p>
+					<p>撮影</p>
+				</div>
+				<!--コンテンツ制作イベント企画-->
+				<div class="overview_contents">
+					<p class="overviw_contents_margin">コンテンツ制作</p>
+					<p>イベント企画</p>
+				</div>
+				<!--システム開発-->
+				<div class="overview_contents">
+					<p class="overviw_contents_margin_ver2">システム開発</p>
+				</div>
+				<!--IT教育-->
+				<div class="overview_contents">
+					<p class="overviw_contents_margin">IT教育</p>
+					<p>社内ICT支援</p>
+				</div>
+			</div><!--/PC用事業概要 /class="overview_wrap clearfix visible-lg"-->
+			
+			<!--スマホ用事業概要-->
+			<div class="visible-md visible-sm visible-xs">
+				<!--デザイン広告制作-->
+				<div class="mini_overview">
+					<a href="#">
+					<p>デザイン    広告制作</p>
+					</a>
+				</div>
+				<!--映像/音楽制作-->
+				<div class="mini_overview">
+					<a href="#">
+						<p>映像/音楽制作    撮影</p>
+					</a>
+				</div>
+				<!--コンテンツ制作-->
+				<div class="mini_overview">
+					<a href="#">
+						<p>コンテンツ制作    イベント企画</p>
+					</a>
+				</div>
+				<!--システム開発-->
+				<div class="mini_overview">
+					<a href="#">
+						<p>システム開発</p>
+					</a>
+				</div>
+				<!--IT教育-->
+				<div class="mini_overview">
+					<a href="#">
+						<p>IT教育    社内ICT支援</p>
+					</a>
+				</div>
+			</div><!--/スマホ用事業概要 /class="visible-md visible-sm visible-xs"-->
+		</section><!--/INTRODUCTION-->
+		
+		<!--スタッフ-->
+		<section> 
+			<img src="image/スタッフ.png" class="introduction_overview">
+			<!--PC用スタッフ-->
+			<div class="overview_wrap clearfix visible-lg">
+				<!--川合-->
+				<div class="staff_box">
+					<p>代表</p>
+					<p class="name">川合</p>
+				</div>
+				<!--吉野-->
+				<div class="staff_box">
+					<p>制作デスク</p>
+					<p class="name">吉野</p>
+				</div>
+				<!--大内-->
+				<div class="staff_box">
+					<p>デザイナー</p>
+					<p class="name">大内</p>
+				</div>
+				<!--安居-->
+				<div class="staff_box">
+					<p>デザイナー</p>
+					<p class="name">安居</p>
+				</div>
+				<!--武野-->
+				<div class="staff_box">
+					<p>モーションデザイナー</p>
+					<p class="name">武野</p>
+				</div>
+				<!--渡邉-->
+				<div class="staff_box">
+					<p>Webデザイナー</p>
+					<p class="name">渡邉</p>
+				</div>
+				<!--田中-->
+				<div class="staff_box">
+					<p>エンジニア</p>
+					<p class="name">田中</p>
+				</div>
+				<!--岩間-->
+				<div class="staff_box">
+					<p>コンポーザー</p>
+					<p class="name">岩間</p>
+				</div>
+			</div><!--/PC用スタッフ  /class="overview_wrap clearfix visible-lg"-->
+			
+			<!--タブレット用スタッフ-->
+			<div class="tab_staff_wrap clearfix visible-sm visible-md">
+				<!--川合-->
+				<div class="tab_staff_box">
+					<p>代表</p>
+					<p class="name">川合</p>
+				</div>
+				<!--吉野-->
+				<div class="tab_staff_box">
+					<p>制作デスク</p>
+					<p class="name">吉野</p>
+				</div>
+				<!--大内-->
+				<div class="tab_staff_box">
+					<p>デザイナー</p>
+					<p class="name">大内</p>
+				</div>
+				<!--安居-->
+				<div class="tab_staff_box">
+					<p>デザイナー</p>
+					<p class="name">安居</p>
+				</div>
+				<!--武野-->
+				<div class="tab_staff_box">
+					<p>モーション<br>
+						デザイナー</p>
+					<p class="name">武野</p>
+				</div>
+				<!--渡邉-->
+				<div class="tab_staff_box">
+					<p>Webデザイナー</p>
+					<p class="name">渡邉</p>
+				</div>
+				<!--田中-->
+				<div class="tab_staff_box">
+					<p>エンジニア</p>
+					<p class="name">田中</p>
+				</div>
+				<!--岩間-->
+				<div class="tab_staff_box">
+					<p>コンポーザー</p>
+					<p class="name">岩間</p>
+				</div>
+			</div><!--/タブレット用スタッフ /class="tab_staff_wrap clearfix visible-sm visible-md"-->
+			
+			<!--スマホ用スタッフ-->
+			<div class="visible-xs clearfix mini_staff_wrap">
+				<div class="clearfix">
+					<!--川合-->
+					<div class="mini_staff_box">
+						<p>代表</p>
+						<p class="name">川合</p>
+					</div>
+					<!--吉野-->
+					<div class="mini_staff_box">
+						<p>制作デスク</p>
+						<p class="name">吉野</p>
+					</div>
+					<!--大内-->
+					<div class="mini_staff_box">
+						<p>デザイナー</p>
+						<p class="name">大内</p>
+					</div>
+					<!--安居-->
+					<div class="mini_staff_box">
+						<p>デザイナー</p>
+						<p class="name">安居</p>
+					</div>
+				</div><!--/class="clearfix"-->
+				<!--武野-->
+				<div class="mini_staff_box">
+					<p>モーション<br>
+						デザイナー</p>
+					<p class="name">武野</p>
+				</div>
+				<!--渡邉-->
+				<div class="mini_staff_box">
+					<p>Webデザイナー</p>
+					<p class="name">渡邉</p>
+				</div>
+				<!--田中-->
+				<div class="mini_staff_box">
+					<p>エンジニア</p>
+					<p class="name">田中</p>
+				</div>
+				<!--岩間-->
+				<div class="mini_staff_box">
+					<p>コンポーザー</p>
+					<p class="name">岩間</p>
+				</div>
+			</div><!--/スマホ用スタッフ  /class="visible-xs clearfix mini_staff_wrap"-->
+		</section><!--/スタッフ-->
+		
+		
+		<!--アクセス-->
+		<section class="access">
+			<!--PC、タブレット用-->
+			<div class="visible-lg visible-md visible-sm"> <img src="image/map_info.png" class="map_info">
+				<p class="triangle"></p>
+				<div class="map_wrap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52356.18496006301!2d136.55057582577004!3d34.899885040249025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60038a4aacb1c941%3A0xf97e20286662505f!2z5pel5pysLCDjgJI1MTMtMDgwMSDkuInph43nnIzpiLTpub_luILnpZ7miLjvvJbkuIHnm67vvJHvvJLiiJLvvJLvvJI!5e0!3m2!1sja!2sjp!4v1434993685793" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+				</div>
+			</div>
+			<!--スマホ用-->
+			<div class="visible-xs">
+				<div class="mini_map_info_box">
+					<p class="mini_map_info_large">■
+						<ruby> 鈴鹿スタジオ
+							<rt>システムメディア</rt>
+						</ruby>
+					</p>
+					<p class="mini_map_info_small">すずかデザイン事務所</p>
+					<div class="access_info">
+						<p>［アクセス］</p>
+						<p>〒513-0801</p>
+						<p>三重県鈴鹿市神戸6-12-22 システムメディア鈴鹿スタジオ</p>
+						<p>1F/オフィス, デザインルーム</p>
+						<p>2F/レコーディングスタジオ, フォトスタジオ,パートナーオフィス</p>
+					</div>
+					<div class="place_info">
+						<p>駐車場 ６台</p>
+						<p>お越しの際は 090-8164-5799 までご連絡くださいませ。</p>
+					</div>
+					<!--/place_info-->
+				</div>
+				<!--/mini_map_info_box-->
+				<p class="mini_triangle"></p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52356.18496006301!2d136.55057582577004!3d34.899885040249025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60038a4aacb1c941%3A0xf97e20286662505f!2z5pel5pysLCDjgJI1MTMtMDgwMSDkuInph43nnIzpiLTpub_luILnpZ7miLjvvJbkuIHnm67vvJHvvJLiiJLvvJLvvJI!5e0!3m2!1sja!2sjp!4v1434993685793" width="100%" height="400px" frameborder="0" style="border:0"></iframe>
+			</div>
+			<!--/visible-xs-->
+		</section>
+		<!--/access-->
+		<!--CONTACT-->
+		<section class="clearfix">
+			<!--PC、タブレット用コンタクト-->
+			<div  class="visible-lg visible-md contact">
+				<!--上のロゴ部分-->
+				<div class="contact_rogo_wrap clearfix"> <img src="image/contact.png" class="contact_rogo"> <img src="image/foot.png"  class="contact_info"> </div>
+				<!--/contacu_rogo_wrap-->
+				<!--下のメイン部分-->
+				<div class="row contact_wrap">
+					<!--左側のフォーム-->
+					<div class="col-md-4 col-lg-4">
+						<div class="form-group form-inline">
+							<p class="left_menu">【　名前　】
+								<input name="name" class="form-control" placeholder="名前" type="text" id="NameFamily" required="required"/>
+							</p>
+							<p class="left_menu">【　件名　】
+								<input name="title" class="form-control" placeholder="件名" type="text" id="NameFirst" required="required"/>
+							</p>
+							<p class="left_menu">【アドレス】
+								<input name = "adress" class="form-control" placeholder="メールアドレス" type="email" id="input-mail" required="required">
+							</p>
+						</div>
+					</div>
+					<!--右側のフォーム-->
+					<div class="col-md-8 col-lg-8">
+						<textarea name="opinion_info" class="form-control" rows="12" required  placeholder="お問い合わせ内容"></textarea>
+						<button type="submit" class="btn btn-default contact_submit_btn">メール送信</button>
+					</div>
+				</div>
+			</div>
+			<!--/visible-lg visible-sm visible-md、（PC、タブレット用コンタクト）-->
+			<!--スマホ用コンタクト-->
+			<div class="visible-xs visible-sm row mini_contact"> <img src="image/CONCEPT.png" class="mini_contact_rogo visible-sm tab_contact_rogo">
+				<!--スマホと同じサイズだとデザインが崩れたためタブレット用-->
+				<img src="image/CONCEPT.png" class="mini_contact_rogo visible-xs">
+				<!--スマホ用-->
+				<img src="image/foot.png" class="mini_contact_rogo mini_contact_rogo_under">
+				<div class="form-group form-inline">
+					<p class="left_menu">【　名前　】
+						<input name="name" class="form-control" placeholder="名前" type="text" id="NameFamily" required="required"/>
+					</p>
+					<p class="left_menu">【　件名　】
+						<input name="title" class="form-control" placeholder="件名" type="text" id="NameFirst" required="required"/>
+					</p>
+					<p class="left_menu">【アドレス】
+						<input name = "adress" class="form-control" placeholder="メールアドレス" type="email" id="input-mail" required="required">
+					</p>
+					<p>
+						<textarea name="opinion_info" class="mini_contact_opinion_info" rows="12" required  placeholder="お問い合わせ内容"></textarea>
+					</p>
+					<button type="submit" class="btn btn-default contact_submit_btn mini_contact_submit">メール送信</button>
+				</div>
+			</div>
+			<!--/visible-xe visible-sm、（スマホ用コンタクト）-->
+		</section>
+		<!--CONTACT-->
+	</article>
+	<!--フッター-->
+	<footer class="footer_wrap">
+		<div class="footer_info"> Copyright © 2015 Copyriight_sample All Rights Reserved. </div>
+	</footer>
+</div>
+</body>
+</html>
